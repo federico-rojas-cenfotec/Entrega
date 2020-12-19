@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControlUsuarioFinal"> <!--si 20 esta en rojo es porque esto no esta referenciado correctamente o no halla la funcion-->
+   <children>
+      <TextField fx:id="idnombre" layoutX="88.0" layoutY="80.0" promptText="Nombre" />
+      <TextField fx:id="idapellido1" layoutX="280.0" layoutY="80.0" promptText="Primer Apellido" />
+      <TextField fx:id="idapellido2" layoutX="491.0" layoutY="80.0" promptText="Segundo Apellido" />
+      <TextField fx:id="idavatar" layoutX="88.0" layoutY="163.0" promptText="Avatar" />
+      <TextField fx:id="correo" layoutX="280.0" layoutY="163.0" promptText="Correo" />
+      <TextField fx:id="contrasenna" layoutX="491.0" layoutY="163.0" promptText="Contraseña" />
+      <TextField fx:id="pais" layoutX="280.0" layoutY="251.0" promptText="País de procedencia" />
+      <TextField fx:id="numeroIdentificacion" layoutX="491.0" layoutY="251.0" promptText="Número de identificación" />
+      <DatePicker fx:id="fechaNac" layoutX="76.0" layoutY="251.0" promptText="Fecha de nacimiento" />
+      <Button fx:id="registro" layoutX="335.0" layoutY="339.0" mnemonicParsing="false" onAction="#registro" text="Registro" />
+      <Text fill="#e11111" focusTraversable="true" layoutX="270.0" layoutY="427.0" nodeOrientation="LEFT_TO_RIGHT" strokeLineJoin="ROUND" strokeWidth="0.0" text="El baúl de los recuerdos!!!">
+         <font>
+            <Font name="Ink Free" size="36.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutY="327.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../imagenes/baúl.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="800.0" layoutY="-4.0" prefHeight="536.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="527.0" fitWidth="200.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../imagenes/imagenFondo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

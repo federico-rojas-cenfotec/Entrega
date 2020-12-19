@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.CheckComboBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControlGenero">
+   <children>
+      <TextField fx:id="idNombreGenero" alignment="CENTER" layoutX="142.0" layoutY="191.0" promptText="Nombre del género" />
+      <Text layoutX="195.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registro de un género">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="registrar" layoutX="335.0" layoutY="272.0" mnemonicParsing="false" onAction="#registrar" text="Registro" />
+      <AnchorPane layoutX="628.0" prefHeight="640.0" prefWidth="372.0">
+         <children>
+            <ImageView fitHeight="640.0" fitWidth="372.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../imagenes/imagenFondo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="440.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/baúl.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Text fill="#e11111" focusTraversable="true" layoutX="229.0" layoutY="564.0" nodeOrientation="LEFT_TO_RIGHT" strokeLineJoin="ROUND" strokeWidth="0.0" text="El baúl de los recuerdos!!!">
+         <font>
+            <Font name="Ink Free" size="36.0" />
+         </font>
+      </Text>
+      <TextField fx:id="idDescripcion" alignment="CENTER" layoutX="426.0" layoutY="191.0" promptText="Descripción" />
+      <Button layoutX="303.0" layoutY="467.0" mnemonicParsing="false" onMouseClicked="#regresarMenu" text="Regresar al Menú Principal" />
+      <CheckComboBox fx:id="idlistarGeneros" layoutX="264.0" layoutY="368.0" title="Enliste los géneros registrados" />
+   </children>
+</AnchorPane>
